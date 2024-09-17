@@ -49,13 +49,7 @@ Framework: JavaFX
 Languages: Java (for application logic), CSS (for styling)
 
 Backend:
-Framework: No specific backend framework (as JavaFX typically doesn't require a separate backend framework)
 Database: Text files used to store information.
-
-
-Other relevant technologies:
-File Handling: Specify the methods or classes used for file input/output in JavaFX.
-
 
 
 
@@ -105,7 +99,7 @@ Steps:
 Extract the Project: If the project is in a ZIP file, extract it to your preferred location.
 
 
-2.Open the IDE (Integrated Development Environment) where you usually work on Java projects
+2.Open the IDE where you usually work on Java projects
  (e.g., IntelliJ IDEA, Eclipse, NetBeans).
 
 
@@ -127,15 +121,6 @@ Run the project using the IDE's "Run" or "Debug" option.
 6.Launch the Application:
 Once the project is successfully built and run, the JavaFX application window should open, displaying your
  application's interface.
-Example (Command Line if using JDK and JavaFX SDK):
-If you're using command line tools to compile and run your JavaFX project:
-Navigate to the directory containing your JavaFX project's source files using the command prompt or terminal.
-Compile your project using the javac command for your main Java file (replace Main.java with your actual main 
-class file):
-javac --module-path /path/to/javafx-sdk/lib --add-modules javafx.controls,javafx.fxml Main.java
-Run your project using the java command (replace Main with your main class name):
-java --module-path /path/to/javafx-sdk/lib --add-modules javafx.controls,javafx.fxml Main
-
 
 
 
@@ -145,7 +130,7 @@ Login:
 Enter username and password to access the application.
 
 Character Selection:
-Choose a character to represent yourself.
+Choose a character by clicking on the arrows to represent yourself.
 
 Map Page:
 Navigate through different areas (Health, Education, Finance) using the respective buttons.
@@ -156,49 +141,3 @@ Set goals, manage to-do lists, and take notes on each respective page.
 Earning XP:
 Perform actions like goal setting or task completion to earn experience points, reflected in progress bars.
 
-
-
-
-Future Features
-
-Database:
-For storing data purposes text files are not really a great choice so using an actual database like MySQL would be way more beneficial for the future and functionality of that app.
-
-Enhanced Gamification:
-Reward Systems and Levels: The plan is to implement a comprehensive reward system that offers users incentives based on their progress within the application. This could include unlocking achievements, earning badges, or leveling up based on completed tasks and goals.
-
-Social Integration:
-Collaborative Features: There's a consideration to integrate collaborative functionalities, enabling users to share goals, tasks, or notes with others. This could involve features for team-based goal setting, sharing progress updates, or collaborating on specific tasks.
-
-Customization:
-Character and Theme Customization: The aim is to provide users with more options for personalization. This includes expanding character customization features and offering various themes for the application interface. Users will have the ability to choose and personalize their characters and select themes that resonate with their preferences.
-
-Map Expansion and Theme-Based Areas:
-Updating Drawings and Map Areas: Plans involve updating existing pixel art drawings and expanding the map interface. This includes adding new areas with different themes that users can explore and write about. Each area might represent distinct topics or interests, allowing users to engage in various activities or note-taking related to those themes. For instance, areas could focus on hobbies, travel, personal growth, etc.
-
-General Enhancements Across Pages:
-Collaborative Features: Exploring options for collaborative editing or sharing of specific sections within each 
-page, enabling users to collaborate on projects or share notes/tasks with others.
-Date Functionality: Introducing the ability to add dates to tasks, notes, or goals Enhanced Note-Taking: such as 
-formatting options, bullet points, and the ability to embed multimedia content (images, videos, links) to enhance
- the note-taking experience.
-Progress Tracking: Consideration for incorporating progress trackers or study logs to monitor learning progress 
-and visualize study hours or achievements.
-Fitness Tracking: Adding functionalities for fitness tracking, including workout routines, exercise logs, and 
-ealth-related goals. Users can input their workout details, track progress, and set fitness milestones.
-Nutritional Insights: Integration of features to track dietary habits, calorie intake, and meal planning. Users 
-can log their meals, monitor nutritional values, and receive insights for healthier living.
-Budgeting Tools: Enhancing the finance section with budgeting tools, allowing users to create budgets, 
-track expenses, and visualize spending patterns using graphs or charts.
-Expense Tracking by Category: Enabling users to categorize expenses and income, providing detailed insights 
-into spending habits across various expense categories.
-Goal-Based Savings: Introducing goal-based savings options where users can set financial goals (e.g., saving 
-for a vacation, purchasing a gadget) and track their progress toward achieving those goals.
-
-
-
-
-Credits and Acknowledgments:
-
-Bro Code on Youtube: https://www.youtube.com/watch?v=9XJicRt_FaI
-ChatGPT: for debugging.
