@@ -1,0 +1,168 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.root{
+	-fx-background-color: lightblue;
+	-fx-background-image: url("../images/bgpic.png");
+}
+
+.label{
+	-fx-text-fill: white;
+}
+
+#loginButton {
+    -fx-background-color: #6186dc; 
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand; 
+    
+    /* Set up transition effect */
+    -fx-background-insets: 0, 0, 1, 2;
+    -fx-padding: 8 15 8 15;
+    -fx-background-radius: 5, 5, 4, 3;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 0);
+}
+
+#loginButton:hover {
+    -fx-background-color: #7795dd; 
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    
+}
+
+#eExitButton{
+	-fx-background-color: #fdeb4b;
+}
+
+#hExitButton{
+	-fx-background-color: #f694eb;
+}
+
+#fExitButton{
+	-fx-background-color: #47bc53;
+}
+
+#passwordBox, #usernameBox {
+    -fx-background-color: #ffffff;
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+    -fx-border-radius: 5px;
+}
+
+
+#helloLabel {
+    -fx-fill: white;
+    -fx-font-size: 70px;
+    -fx-font-family: 'Agbalumo';
+     -fx-alignment: center;
+}
+
+#wrongLogIn{
+	 -fx-fill: white;
+    -fx-font-size: 15px;
+     -fx-alignment: center;
+}
+
+#helloName{
+	 -fx-fill: white;
+    -fx-font-size: 70px;
+    -fx-font-family: 'Agbalumo';
+     -fx-alignment: center;
+}
+
+.button{
+	 -fx-background-color: #6186dc; 
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand; 
+     -fx-focus-traversable: false;
+}
+
+#fGoalButton:hover,
+#fToDoButton:hover,
+#fNoteButton:hover,
+#hGoalButton:hover,
+#hToDoButton:hover,
+#hNoteButton:hover,
+#eGoalButton:hover,
+#eToDoButton:hover,
+#eNoteButton:hover {
+    -fx-underline: true;
+}
+
+#exitButton{
+	 -fx-background-color: #339641; 
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand; 
+}
+
+
+#mapBg {
+    -fx-background-image: url("../images/map-background.png");
+}
+
+#healthBg {
+    -fx-background-image: url("../images/h-bg.png");
+}
+
+#financeBG{
+	-fx-background-image: url("../images/f-bg.png");
+}
+
+#educationBG{
+	-fx-background-image: url("../images/s-bg.png");
+}
+
+
+#eBar .track {
+    -fx-background-color: #f9cfa9; 
+}
+
+#eBar .bar {
+    -fx-background-color: #FFA500;
+}
+
+#eBar .text {
+    -fx-font-size: 14px; 
+    -fx-text-fill: black; 
+    -fx-font-weight: bold; 
+}
+
+
+#hBar .track {
+    -fx-background-color: #FFB6C1;
+}
+
+#hBar .bar {
+    -fx-background-color: #FF69B4; 
+}
+
+#hBar .text {
+    -fx-font-size: 14px; 
+    -fx-text-fill: black;
+    -fx-font-weight: bold; 
+}
+
+#fBar .track {
+    -fx-background-color: #98FB98;
+}
+
+#fBar .bar {
+    -fx-background-color: #006400;
+}
+
+#fBar .text {
+    -fx-font-size: 14px; 
+    -fx-text-fill: black; 
+    -fx-font-weight: bold; 
+}
+
+
+
+

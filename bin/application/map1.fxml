@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mapBg" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Map1">
+  <top>
+        <AnchorPane prefHeight="124.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="exitButton" layoutX="885.0" layoutY="25.0" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="25.0" prefWidth="83.0" stylesheets="@application.css" text="Log Out" textFill="WHITE" />
+            <Label fx:id="usernameLabel" layoutX="138.0" layoutY="12.0" prefHeight="20.0" prefWidth="108.0" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <ProgressBar fx:id="eBar" layoutX="138.0" layoutY="32.0" prefHeight="18.0" prefWidth="166.0" progress="0.0" stylesheets="@application.css" />
+            <ProgressBar fx:id="hBar" layoutX="138.0" layoutY="58.0" prefHeight="18.0" prefWidth="166.0" progress="0.0" stylesheets="@application.css" />
+            <ProgressBar fx:id="fBar" layoutX="138.0" layoutY="84.0" prefHeight="18.0" prefWidth="166.0" progress="0.0" stylesheets="@application.css" />
+            <ImageView fitHeight="129.0" fitWidth="131.0">
+               <image>
+                  <Image url="@../images/frame.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="chosenCharacterImageView" fitHeight="127.0" fitWidth="134.0" layoutX="4.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+            </children>
+        </AnchorPane>
+    </top>
+    <center>
+        <AnchorPane prefHeight="316.0" prefWidth="370.0" BorderPane.alignment="CENTER">
+            <children>
+                <!-- Add ImageView element for the character image -->
+                <ImageView fx:id="characterImageView" fitHeight="191.0" fitWidth="218.0" layoutX="97.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
+            </children>
+        </AnchorPane>
+    </center>
+    <left>
+    <AnchorPane prefHeight="318.0" prefWidth="305.0" BorderPane.alignment="CENTER">
+        <children>
+            <Button fx:id="educationButton" layoutX="-9.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleEducationButtonAction" prefHeight="260.0" prefWidth="308.0" style="-fx-background-color: transparent;">
+               <graphic>
+                    <ImageView fitHeight="260.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../images/education.png" />
+                        </image>
+                    </ImageView>
+               </graphic>
+            </Button>
+        </children>
+    </AnchorPane>
+</left>
+    <right>
+    <AnchorPane prefHeight="300.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+        <children>
+            <Button fx:id="healthButton" layoutX="23.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleHealthButtonAction" prefHeight="224.0" prefWidth="300.0" style="-fx-background-color: transparent;">
+               <graphic>
+                    <ImageView fitHeight="260.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../images/health.png" />
+                        </image>
+                    </ImageView>
+               </graphic></Button>
+        </children>
+    </AnchorPane>
+</right>
+
+<!-- Bottom -->
+<bottom>
+    <AnchorPane prefHeight="209.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+        <children>
+            <Button fx:id="financeButton" layoutX="413.0" mnemonicParsing="false" onAction="#handleFinanceButtonAction" style="-fx-background-color: transparent;">
+                <graphic>
+                    <ImageView fitHeight="200.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../images/money.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </children>
+    </AnchorPane>
+</bottom>
+</BorderPane>
